@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="in.co.gorest.gorestinfo.UsersCRUDTest" time="16.03" tests="10" errors="4" skipped="0" failures="1">
+  <properties>
+    <property name="idea.version" value="2021.3.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\rinky\IdeaProjects\gorest-serenity-api"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\rinky\IdeaProjects\gorest-serenity-api"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\rinky\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python39\Scripts\;C:\Program Files\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Apache\apache-maven-3.8.5\bin;C:\Program Files\nodejs\;C:\Users\rinky\AppData\Local\Microsoft\WindowsApps;C:\Users\rinky\AppData\Local\Programs\Git\cmd;C:\Users\rinky\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\rinky"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="rinky"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.3.2 clean verify serenity:aggregate"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="test001" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="8.536"/>
+  <testcase name="test002" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="0.881">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at in.co.gorest.gorestinfo.UsersCRUDTest.test002(UsersCRUDTest.java:43)
+]]></failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users/9706
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	userID=9706
+Multiparts:		<none>
+Headers:		Authorization=Bearer abc123
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Server: nginx
+Date: Wed, 08 Jun 2022 09:24:26 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Cache-Control: no-cache
+X-Request-Id: d98fdc8f-afe6-43a6-9bac-ff130fad5e39
+X-Runtime: 0.003709
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+{
+    "message": "Resource not found"
+}
+]]></system-out>
+    <system-err><![CDATA[9735 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: This will create a new User
+----------------------------------------------------------------------------
+9739 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test002
+-------------------------------------------------------------------
+9739 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 2
+]]></system-err>
+  </testcase>
+  <testcase name="test003" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="0.738"/>
+  <testcase name="test004" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="1.414"/>
+  <testcase name="test005" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="0.732"/>
+  <testcase name="test006" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="0.744">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at in.co.gorest.gorestinfo.UsersCRUDTest.test006(UsersCRUDTest.java:82)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 0f23b136e758c180b7e1e8eae923b96a7a792697594a0925c10f3c923405d9dc
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 08 Jun 2022 09:24:30 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 2285
+X-Pagination-Pages: 115
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"afea24c9f5d3532c7c801eb1fe234acc"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 8b111335-0f29-4e59-918a-4eb3a09c00de
+X-Runtime: 0.023302
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 2345,
+        "name": "Goswami Chopra",
+        "email": "goswami_chopra@schoen-waelchi.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2343,
+        "name": "Deepesh Kakkar",
+        "email": "kakkar_deepesh@stehr.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 2342,
+        "name": "Ahalya Joshi",
+        "email": "ahalya_joshi@feil.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2341,
+        "name": "Drona Asan",
+        "email": "drona_asan@kris.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2340,
+        "name": "Sucheta Butt",
+        "email": "sucheta_butt@braun-schuster.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2339,
+        "name": "Hari Khanna",
+        "email": "khanna_hari@ledner-sawayn.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2338,
+        "name": "Fr. Kumar Mahajan",
+        "email": "kumar_mahajan_fr@price-boehm.net",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2337,
+        "name": "Agnimitra Kapoor",
+        "email": "kapoor_agnimitra@hermiston-okeefe.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2335,
+        "name": "Chidambaram Ahuja",
+        "email": "ahuja_chidambaram@olson.biz",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2333,
+        "name": "Deeptimay Naik",
+        "email": "naik_deeptimay@mckenzie.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2332,
+        "name": "Jagadisha Embranthiri CPA",
+        "email": "cpa_jagadisha_embranthiri@gislason-goodwin.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2331,
+        "name": "Ms. Balaaditya Kapoor",
+        "email": "kapoor_balaaditya_ms@veum.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2330,
+        "name": "Chandani Ahuja",
+        "email": "ahuja_chandani@hintz-hilll.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 2329,
+        "name": "Kartik Gowda",
+        "email": "kartik_gowda@kris.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2327,
+        "name": "Bhadraksh Khan",
+        "email": "bhadraksh_khan@hoppe.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2326,
+        "name": "Anang Pilla",
+        "email": "pilla_anang@bergnaum.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2325,
+        "name": "Amb. Dhyanesh Menon",
+        "email": "amb_dhyanesh_menon@bailey-feest.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2324,
+        "name": "Akshayakeerti Naik",
+        "email": "akshayakeerti_naik@ledner.io",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2323,
+        "name": "Dev Acharya",
+        "email": "acharya_dev@goodwin-grimes.io",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2322,
+        "name": "Keerti Talwar",
+        "email": "talwar_keerti@harvey.org",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[13540 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1. This will Verify if Total record is 20
+----------------------------------------------------------------------------
+13542 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test006
+-------------------------------------------------------------------
+13542 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 6
+]]></system-err>
+  </testcase>
+  <testcase name="test007" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="0.786">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at in.co.gorest.gorestinfo.UsersCRUDTest.test007(UsersCRUDTest.java:90)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 0f23b136e758c180b7e1e8eae923b96a7a792697594a0925c10f3c923405d9dc
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 08 Jun 2022 09:24:30 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 2285
+X-Pagination-Pages: 115
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"afea24c9f5d3532c7c801eb1fe234acc"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 60ba90eb-0fc6-4835-86d6-9931a1b54133
+X-Runtime: 0.019263
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 2345,
+        "name": "Goswami Chopra",
+        "email": "goswami_chopra@schoen-waelchi.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2343,
+        "name": "Deepesh Kakkar",
+        "email": "kakkar_deepesh@stehr.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 2342,
+        "name": "Ahalya Joshi",
+        "email": "ahalya_joshi@feil.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2341,
+        "name": "Drona Asan",
+        "email": "drona_asan@kris.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2340,
+        "name": "Sucheta Butt",
+        "email": "sucheta_butt@braun-schuster.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2339,
+        "name": "Hari Khanna",
+        "email": "khanna_hari@ledner-sawayn.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2338,
+        "name": "Fr. Kumar Mahajan",
+        "email": "kumar_mahajan_fr@price-boehm.net",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2337,
+        "name": "Agnimitra Kapoor",
+        "email": "kapoor_agnimitra@hermiston-okeefe.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2335,
+        "name": "Chidambaram Ahuja",
+        "email": "ahuja_chidambaram@olson.biz",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2333,
+        "name": "Deeptimay Naik",
+        "email": "naik_deeptimay@mckenzie.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2332,
+        "name": "Jagadisha Embranthiri CPA",
+        "email": "cpa_jagadisha_embranthiri@gislason-goodwin.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2331,
+        "name": "Ms. Balaaditya Kapoor",
+        "email": "kapoor_balaaditya_ms@veum.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2330,
+        "name": "Chandani Ahuja",
+        "email": "ahuja_chandani@hintz-hilll.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 2329,
+        "name": "Kartik Gowda",
+        "email": "kartik_gowda@kris.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2327,
+        "name": "Bhadraksh Khan",
+        "email": "bhadraksh_khan@hoppe.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2326,
+        "name": "Anang Pilla",
+        "email": "pilla_anang@bergnaum.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2325,
+        "name": "Amb. Dhyanesh Menon",
+        "email": "amb_dhyanesh_menon@bailey-feest.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2324,
+        "name": "Akshayakeerti Naik",
+        "email": "akshayakeerti_naik@ledner.io",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2323,
+        "name": "Dev Acharya",
+        "email": "acharya_dev@goodwin-grimes.io",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2322,
+        "name": "Keerti Talwar",
+        "email": "talwar_keerti@harvey.org",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[14290 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: 2.id 3838 has name =Chaturbhuj Nehru DVM
+---------------------------------------------------------------------
+14291 [main] ERROR net.serenitybdd.core.Serenity - Index: 0, Size: 0
+14294 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test007
+-------------------------------------------------------------------
+14294 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 7
+]]></system-err>
+  </testcase>
+  <testcase name="test008" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="0.742"/>
+  <testcase name="test009" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="0.734">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at in.co.gorest.gorestinfo.UsersCRUDTest.test009(UsersCRUDTest.java:110)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 0f23b136e758c180b7e1e8eae923b96a7a792697594a0925c10f3c923405d9dc
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 08 Jun 2022 09:24:32 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 2285
+X-Pagination-Pages: 115
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"afea24c9f5d3532c7c801eb1fe234acc"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: e55deaab-15ac-478a-9134-5661b7591cfb
+X-Runtime: 0.018851
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 2345,
+        "name": "Goswami Chopra",
+        "email": "goswami_chopra@schoen-waelchi.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2343,
+        "name": "Deepesh Kakkar",
+        "email": "kakkar_deepesh@stehr.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 2342,
+        "name": "Ahalya Joshi",
+        "email": "ahalya_joshi@feil.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2341,
+        "name": "Drona Asan",
+        "email": "drona_asan@kris.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2340,
+        "name": "Sucheta Butt",
+        "email": "sucheta_butt@braun-schuster.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2339,
+        "name": "Hari Khanna",
+        "email": "khanna_hari@ledner-sawayn.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2338,
+        "name": "Fr. Kumar Mahajan",
+        "email": "kumar_mahajan_fr@price-boehm.net",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2337,
+        "name": "Agnimitra Kapoor",
+        "email": "kapoor_agnimitra@hermiston-okeefe.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2335,
+        "name": "Chidambaram Ahuja",
+        "email": "ahuja_chidambaram@olson.biz",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2333,
+        "name": "Deeptimay Naik",
+        "email": "naik_deeptimay@mckenzie.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2332,
+        "name": "Jagadisha Embranthiri CPA",
+        "email": "cpa_jagadisha_embranthiri@gislason-goodwin.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2331,
+        "name": "Ms. Balaaditya Kapoor",
+        "email": "kapoor_balaaditya_ms@veum.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2330,
+        "name": "Chandani Ahuja",
+        "email": "ahuja_chandani@hintz-hilll.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 2329,
+        "name": "Kartik Gowda",
+        "email": "kartik_gowda@kris.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2327,
+        "name": "Bhadraksh Khan",
+        "email": "bhadraksh_khan@hoppe.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2326,
+        "name": "Anang Pilla",
+        "email": "pilla_anang@bergnaum.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2325,
+        "name": "Amb. Dhyanesh Menon",
+        "email": "amb_dhyanesh_menon@bailey-feest.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2324,
+        "name": "Akshayakeerti Naik",
+        "email": "akshayakeerti_naik@ledner.io",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2323,
+        "name": "Dev Acharya",
+        "email": "acharya_dev@goodwin-grimes.io",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2322,
+        "name": "Keerti Talwar",
+        "email": "talwar_keerti@harvey.org",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[15828 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4.All ID has status =active
+----------------------------------------------------------------------------
+15829 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test009
+-------------------------------------------------------------------
+15829 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 9
+]]></system-err>
+  </testcase>
+  <testcase name="test010" classname="in.co.gorest.gorestinfo.UsersCRUDTest" time="0.723">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at in.co.gorest.gorestinfo.UsersCRUDTest.test010(UsersCRUDTest.java:117)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 0f23b136e758c180b7e1e8eae923b96a7a792697594a0925c10f3c923405d9dc
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 08 Jun 2022 09:24:33 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 2285
+X-Pagination-Pages: 115
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"afea24c9f5d3532c7c801eb1fe234acc"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 447a588e-cbca-4278-8a01-5c0f516ef23b
+X-Runtime: 0.019106
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 2345,
+        "name": "Goswami Chopra",
+        "email": "goswami_chopra@schoen-waelchi.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2343,
+        "name": "Deepesh Kakkar",
+        "email": "kakkar_deepesh@stehr.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 2342,
+        "name": "Ahalya Joshi",
+        "email": "ahalya_joshi@feil.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2341,
+        "name": "Drona Asan",
+        "email": "drona_asan@kris.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2340,
+        "name": "Sucheta Butt",
+        "email": "sucheta_butt@braun-schuster.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2339,
+        "name": "Hari Khanna",
+        "email": "khanna_hari@ledner-sawayn.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2338,
+        "name": "Fr. Kumar Mahajan",
+        "email": "kumar_mahajan_fr@price-boehm.net",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2337,
+        "name": "Agnimitra Kapoor",
+        "email": "kapoor_agnimitra@hermiston-okeefe.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2335,
+        "name": "Chidambaram Ahuja",
+        "email": "ahuja_chidambaram@olson.biz",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2333,
+        "name": "Deeptimay Naik",
+        "email": "naik_deeptimay@mckenzie.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2332,
+        "name": "Jagadisha Embranthiri CPA",
+        "email": "cpa_jagadisha_embranthiri@gislason-goodwin.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2331,
+        "name": "Ms. Balaaditya Kapoor",
+        "email": "kapoor_balaaditya_ms@veum.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2330,
+        "name": "Chandani Ahuja",
+        "email": "ahuja_chandani@hintz-hilll.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 2329,
+        "name": "Kartik Gowda",
+        "email": "kartik_gowda@kris.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2327,
+        "name": "Bhadraksh Khan",
+        "email": "bhadraksh_khan@hoppe.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2326,
+        "name": "Anang Pilla",
+        "email": "pilla_anang@bergnaum.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2325,
+        "name": "Amb. Dhyanesh Menon",
+        "email": "amb_dhyanesh_menon@bailey-feest.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 2324,
+        "name": "Akshayakeerti Naik",
+        "email": "akshayakeerti_naik@ledner.io",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2323,
+        "name": "Dev Acharya",
+        "email": "acharya_dev@goodwin-grimes.io",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 2322,
+        "name": "Keerti Talwar",
+        "email": "talwar_keerti@harvey.org",
+        "gender": "male",
+        "status": "inactive"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[16567 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: 5.id 3829 has gender =female
+---------------------------------------------------------------------
+16568 [main] ERROR net.serenitybdd.core.Serenity - Index: 0, Size: 0
+16570 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test010
+-------------------------------------------------------------------
+16571 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 10
+]]></system-err>
+  </testcase>
+</testsuite>

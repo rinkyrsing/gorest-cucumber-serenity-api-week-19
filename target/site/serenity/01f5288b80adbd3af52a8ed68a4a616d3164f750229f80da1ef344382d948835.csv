@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Users CRUD test","This will create a new User","SUCCESS","2022-06-08T10:24:16.752+01:00[Europe/London]","0.0","8.43"
+"Users CRUD test","This will Fetch user by ID","SUCCESS","2022-06-08T10:24:26.144+01:00[Europe/London]","0.0","0.74"
+"Users CRUD test","This will Delete user by ID","SUCCESS","2022-06-08T10:24:26.885+01:00[Europe/London]","0.0","1.41"
+"Users CRUD test","1. This will Verify if Total record is 20","SUCCESS","2022-06-08T10:24:28.301+01:00[Europe/London]","0.0","0.73"
+"Users CRUD test","4.All ID has status =active","SUCCESS","2022-06-08T10:24:30.580+01:00[Europe/London]","0.0","0.74"
